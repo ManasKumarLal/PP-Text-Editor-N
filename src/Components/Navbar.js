@@ -10,7 +10,14 @@ const Navbar = ({ title, mode, modeToggler }) => {
       <nav className={`navbar navbar-expand-lg navbar-${mode} bg-${mode}`}>
         <div className="container-fluid user-select-none">
           <div className="navbar-brand d-flex align-items-center">
-            <NavLink to="/" className={`text-decoration-none text-${mode==='light'?'black':'light'}`}><span>{title}</span></NavLink>
+            <NavLink
+              to="/"
+              className={`text-decoration-none text-${
+                mode === "light" ? "black" : "light"
+              }`}
+            >
+              <span>{title}</span>
+            </NavLink>
             <div className="form-switch mx-3 d-flex align-items-center gap-1">
               <input
                 className="form-check-input fs-6"
@@ -28,6 +35,18 @@ const Navbar = ({ title, mode, modeToggler }) => {
               </label>
             </div>
           </div>
+          <button
+            className="navbar-toggler"
+            style={{padding:"0px 8px"}}
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon" style={{width:"20px"}}></span>
+          </button>
 
           <div
             className="collapse navbar-collapse ms-5"
@@ -48,8 +67,8 @@ const Navbar = ({ title, mode, modeToggler }) => {
 
             <form className="d-flex">
               <input
-              id="searchInputBox"
-              name="search-box"
+                id="searchInputBox"
+                name="search-box"
                 className="search_input form-control me-2"
                 type="search"
                 placeholder="Search"
