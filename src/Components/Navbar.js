@@ -31,7 +31,7 @@ const Navbar = ({ title, mode, modeToggler }) => {
                 htmlFor="flexSwitchCheckDefault"
                 style={{ cursor: "pointer" }}
               >
-                Enable DarkMode
+                DarkMode
               </label>
             </div>
           </div>
