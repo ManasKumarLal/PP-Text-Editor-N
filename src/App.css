@@ -10,3 +10,11 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
   background:linear-gradient(to left ,rgba(240, 240, 240, 0.539),rgba(0, 0, 0, 0.525));
 }
+
+@media (max-width:600px) {
+  .toastify{
+    top: 30px;
+    max-width: 72%;
+    left: 16%
+  }
+}

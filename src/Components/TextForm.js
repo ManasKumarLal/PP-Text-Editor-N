@@ -30,6 +30,7 @@ const TextForm = (props) => {
   const copyTextHandler = () => {
     navigator.clipboard.writeText(text);
     toast.success("Copied to the clipboard", {
+      className:'toastify',
       position: "top-center",
       autoClose: 1500,
       theme: "colored",

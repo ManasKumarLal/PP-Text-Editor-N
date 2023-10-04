@@ -15,6 +15,7 @@ function App() {
       document.body.style.backgroundColor = "black";
       document.body.style.color = "white";
       toast.success("DarkMode Enabled", {
+        className: 'toastify',
         position: "top-center",
         autoClose: 1000,
         theme: "light",
@@ -24,6 +25,7 @@ function App() {
       document.body.style.backgroundColor = "white";
       document.body.style.color = "black";
       toast.info("DarkMode Disabled", {
+        className: 'toastify',
         position: "top-center",
         autoClose: 1000,
         theme: "dark",
@@ -34,9 +36,9 @@ function App() {
   return (
     <>
       <Navbar title="MKL Testutils" mode={mode} modeToggler={toggle} />
-      <div className="container position-relative">
+      <div className="container">
         <ToastContainer
-          className="user-select-none position-absolute top-0"
+          className="user-select-none"
           pauseOnFocusLoss={false}
         />
           <Routes>
